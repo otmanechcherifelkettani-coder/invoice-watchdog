@@ -1,6 +1,6 @@
 # Supplier Invoice Watchdog v1
 
-A local-first proof of concept that compares supplier invoices and surfaces price creep, pack-size changes, fuel surcharges and market adjustments with source citations.
+A proof of concept that compares supplier invoices, reveals a headline estimate of possible price creep, and shows the exact price, pack-size and fee evidence behind it.
 
 This is a deliberately small decision-support demo. It does **not** contact suppliers, make accounting entries, or upload documents anywhere.
 
@@ -35,6 +35,8 @@ No paid credentials or network calls are required. PDF parsing uses `pypdf` when
 - matches same-SKU products first, then token/pack similarity
 - sends uncertain matches to an editable review table
 - verifies invoice arithmetic and reduces confidence when totals do not reconcile
+- reveals a free headline estimate from positive changes found in the compared periods
+- previews a detailed evidence layer with supplier, old vs new price or fee, invoice line, and estimated monthly impact
 - ranks the five highest-value changes and cites invoice, page and line
 - keeps processing in memory and exposes a one-click session clear action
 

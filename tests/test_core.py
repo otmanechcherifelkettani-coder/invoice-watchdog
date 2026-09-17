@@ -10,7 +10,9 @@ class TestCore(unittest.TestCase):
   self.assertTrue(parse_fixture_text(t)['reconciled'])
  def test_price_alert(self):
   def inv(i,d,p): return parse_fixture_text(f'SUPPLIER: A\nINVOICE: {i}\nDATE: {d}\nSUBTOTAL: {p}\nTOTAL: {p}\nITEM|1|X|Oil|1l|1|{p}|{p}|1',i+'.pdf')
-  self.assertEqual(audit([inv('I1','2026-01-01',10),inv('I2','2026-02-01',12)])['signals'][0]['kind'],'Price')
+  result=audit([inv('I1','2026-01-01',10),inv('I2','2026-02-01',12)])
+  self.assertEqual(result['signals'][0]['kind'],'Price')
+  self.assertEqual(result['possible_monthly_impact'],2.0)
  def test_uncertain_match(self):
   o={'sku':'','description':'Organic Roma Tomato','pack':'10kg'}; n={'sku':'','description':'Tomato Roma Red','pack':'10kg'}
   self.assertIn(match_pair(o,n)[1],('review','confirmed'))
