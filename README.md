@@ -4,13 +4,17 @@ A local-first proof of concept that compares supplier invoices and surfaces pric
 
 This is a deliberately small decision-support demo. It does **not** contact suppliers, make accounting entries, or upload documents anywhere.
 
+## Hosted demo
+
+A hosted instance of this demo runs on Render's free web service, deployed from this repository (`pip install -r requirements.txt`, then `python app.py`; the app reads `PORT` from the environment). It is a **synthetic demo on a public server**: use the built-in demo data and do not upload real invoices. The upload path exists to show product behavior only; see `PRIVACY.md` and `PRODUCTION_GAPS.md` before any real use.
+
 ## Quick start
 
 Requires Python 3.10+.
 
 ```bash
 python3 scripts/generate_synthetic.py   # reproducible fixtures and ground truth
-python3 app.py                          # open http://127.0.0.1:8000
+python3 app.py                          # open http://localhost:8000
 ```
 
 Click **Load demo audit**, or upload 4+ generated PDFs from `data/synthetic/invoices/`.

@@ -1,4 +1,4 @@
-import json,mimetypes,secrets,sys
+import json,mimetypes,os,secrets,sys
 from pathlib import Path
 from http.server import ThreadingHTTPServer,BaseHTTPRequestHandler
 from urllib.parse import urlparse
@@ -37,4 +37,5 @@ class H(BaseHTTPRequestHandler):
   if self.path=='/api/clear': return self.send(200,{'cleared':True})
   self.send(404,{'error':'Not found'})
 if __name__=='__main__':
- print('Invoice Watchdog running at http://127.0.0.1:8000'); ThreadingHTTPServer(('127.0.0.1',8000),H).serve_forever()
+ port=int(os.environ.get('PORT','8000')); host=os.environ.get('HOST','0.0.0.0')
+ print(f'Invoice Watchdog running on {host}:{port}'); ThreadingHTTPServer((host,port),H).serve_forever()
