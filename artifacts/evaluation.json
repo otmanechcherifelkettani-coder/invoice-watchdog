@@ -1,0 +1,11 @@
+{
+  "fixture_invoices": 40,
+  "planted_changes": 12,
+  "detected_planted_changes": 11,
+  "planted_change_recall": 0.917,
+  "false_alerts": 1,
+  "false_alert_rate": 0.083,
+  "structured_field_extraction": 1.0,
+  "reconciled_invoices": 40,
+  "item_matching_on_fixture_sku": 1.0
+}

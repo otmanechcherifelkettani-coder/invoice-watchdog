@@ -1,0 +1,11 @@
+SUPPLIER: Harbor Foods
+INVOICE: HA0009
+DATE: 2026-09-04
+SUBTOTAL: 739.49
+TOTAL: 747.99
+ITEM|1|OIL20|Frying Oil|20l|5|55.64|278.2|1
+ITEM|2|CHK10|Chicken  - Breast|10kg|6|47.16|282.96|1
+ITEM|3|CHP5|Frozen Chips|4x2kg|2|12.67|25.34|1
+ITEM|4|RICE10|Basmati Rice|10kg|3|9.85|29.55|1
+ITEM|5|EGG90|Free Range Eggs|90pcs|4|30.86|123.44|1
+FEE|90|Market adjustment|8.5|1

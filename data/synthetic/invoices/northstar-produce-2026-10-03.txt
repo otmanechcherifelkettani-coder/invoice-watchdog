@@ -1,0 +1,11 @@
+SUPPLIER: NorthStar Produce
+INVOICE: NO0010
+DATE: 2026-10-03
+SUBTOTAL: 915.48
+TOTAL: 922.98
+ITEM|1|TOM10|Roma Tomatoes|10kg|6|43.8|262.8|1
+ITEM|2|POT20|Potatoes Agria|20kg|2|55.92|111.84|1
+ITEM|3|ONI10|Yellow Onions|8kg|3|57.21|171.63|1
+ITEM|4|LEM6|Lemons|6kg|4|25.39|101.56|1
+ITEM|5|HERB1|Flat Leaf Parsley|1kg|5|53.53|267.65|1
+FEE|90|Fuel surcharge|7.5|1

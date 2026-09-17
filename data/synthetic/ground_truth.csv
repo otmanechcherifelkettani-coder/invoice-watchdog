@@ -1,0 +1,13 @@
+supplier,current_invoice,type,key
+NorthStar Produce,NO0007,price,TOM10
+NorthStar Produce,NO0008,pack,ONI10
+NorthStar Produce,NO0009,fee,Fuel surcharge
+Harbor Foods,HA0007,price,OIL20
+Harbor Foods,HA0008,pack,CHP5
+Harbor Foods,HA0009,fee,Market adjustment
+City Beverage,CI0007,price,COL24
+City Beverage,CI0008,pack,JUI12
+City Beverage,CI0009,fee,Fuel surcharge
+CleanServe,CL0007,price,NAP20
+CleanServe,CL0008,pack,GLOVE10
+CleanServe,CL0009,fee,Market adjustment
